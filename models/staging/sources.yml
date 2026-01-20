@@ -1,0 +1,19 @@
+version: 2
+
+sources:
+  - name: raw_fintech
+    schema: main  
+    description: "Datos crudos del sistema bancario cargados vía seeds"
+    tables:
+      - name: finanzas_account_types
+      - name: finanzas_accounts
+      - name: finanzas_bank_employees
+      - name: finanzas_branches
+      - name: finanzas_cards
+      - name: finanzas_customers
+      - name: finanzas_exchange_rates
+      - name: finanzas_investments
+      - name: finanzas_loan_payments
+      - name: finanzas_loans
+      - name: finanzas_transactions
+      - name: finanzas_transfers

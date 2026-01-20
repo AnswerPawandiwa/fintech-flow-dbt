@@ -1,0 +1,28 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+uv.lock
+
+# Private info
+logs/
+.env
+profiles.yml
+fintech_flow.duckdb
+*.csv
+.user.yml
+
+# dbt artifacts
+target/
+dbt_packages/
+logs/
+
+# DuckDB database (Datos locales)
+*.duckdb
+*.duckdb.wal

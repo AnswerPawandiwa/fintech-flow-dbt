@@ -1,0 +1,16 @@
+[project]
+name = "fintech-flow-dbt"
+version = "0.1.0"
+description = "Plataforma de modelado de datos para sistema bancario"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "dbt-duckdb>=1.10.0",
+]
+license = {text = "MIT"}
+authors = [
+    {name = "Gerardo Toboso", email = "gerardotoboso1909@gmail.com"}
+]
+maintainers = [
+    {name = "Gerardo Toboso", email = "gerardotoboso1909@gmail.com"}
+]

